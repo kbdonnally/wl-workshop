@@ -9,16 +9,15 @@ permalink: /gallery/
 
     {% assign pics = site.static_files | where: "image", true | where_exp: "pic", "pic.path contains 'whiteboard-annotated'" %}
 
-    {% for pic in pics %}
-    - basename: {{ pic.basename }}<br/>
-    &nbsp;&nbsp;summary:<br/><br/>
-    {% endfor %}
+    {% assign pic_data = site.data.pics %}
 
     <ul class="gallery__list">
         {% for pic in pics %}
+        {% assign data = pic_data | where_exp: "item", "item.basename == pic.basename" %}
         <li class="gallery-list__item">
             <img src="{{ pic.path | relative_url }}" alt="{{ pic.basename }}">
             <span>{{ pic.basename }}</span>
+            <p><!--strong>Summary:</strong--> {{ data[0].summary }}</p>
         </li>
         {% endfor %}
     </ul>
