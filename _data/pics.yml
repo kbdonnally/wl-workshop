@@ -1,0 +1,67 @@
+# image annotations
+
+- basename: 01-intro
+  summary: >
+    Illustration: hand-drawn text. Concept: how to
+    transfer that text to the computer with same properties.
+
+- basename: 02-intro-w-notes
+  summary: >
+    Some extra explainer notes on the first pic.
+
+- basename: 03-html
+  summary: >
+    Demo of HTML document with comments on what things
+    mean. Shows both head and body. Pair with
+    that weird slide that labels sections/elements. (Explain
+    elements here.)
+
+- basename: 04-css
+  summary: >
+    More details on how to translate drawing from #1 into
+    code. Explains how basic CSS syntax looks, but not classes
+    or IDs. Explains concept of CSS more.
+
+- basename: 05-filepaths
+  summary: >
+    Simple file tree, simple node tree. Detailed explainer on filepaths
+    as a concept. Maybe go over this at the end of HTML, since have to link
+    to another file? Unsure.
+
+- basename: 06-node-tree
+  summary: >
+    Complicated file tree, node tree, and syntax of how to navigate between file
+    locations. More difficult to comprehend than I thought at first - be careful
+    with this part. Maybe don't combine it with the site structure thing? Make
+    the directory names super literal?
+
+- basename: 07-read-html
+  summary: >
+    This is the one that should pair with #3.
+
+- basename: 08-selectors
+  summary: >
+    This also should go up by #3, for top half. Bottom half is CSS, 
+    so cover that after the CSS basics in #4.
+
+- basename: 10-site-files
+  summary: >
+    Complicated site file tree, explaining how websites are usually structured.
+    Nothing that people need to know; it's just something that's helpful to 
+    have when you start looking at other people's projects and trying to figure 
+    out what they mean. Show towards end.
+
+- basename: 12-mockup-to-css
+  summary: >
+    Towards very end: make a mockup of what you want, and make it into fake 
+    HTML for structure. Then, take that structure and use it to make your 
+    CSS classes. That way, it'll make sense to you because you're using the
+    words that made sense to describe the block in the first place. After that,
+    BEM system kicks in.
+
+- basename: 13-mockup-to-html
+  summary: >
+    Combine HTML structure with CSS structure that you've created.
+    This is another one that turns out to be ridiculously complicated
+    upon looking at it... Show at very end so they see how it's all put
+    together, but by no means do people need to grasp this fully.
