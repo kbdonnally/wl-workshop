@@ -1,0 +1,25 @@
+---
+layout: no-styles
+title: Gallery
+permalink: /gallery/
+---
+
+<main class="gallery-wrapper">
+    <h1 class="gallery__page-title">Gallery</h1>
+
+    {% assign pics = site.static_files | where: "image", true | where_exp: "pic", "pic.path contains 'whiteboard-annotated'" %}
+
+    {% for pic in pics %}
+    - basename: {{ pic.basename }}<br/>
+    &nbsp;&nbsp;summary:<br/><br/>
+    {% endfor %}
+
+    <ul class="gallery__list">
+        {% for pic in pics %}
+        <li class="gallery-list__item">
+            <img src="{{ pic.path | relative_url }}" alt="{{ pic.basename }}">
+            <span>{{ pic.basename }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</main>

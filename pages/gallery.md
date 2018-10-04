@@ -1,7 +1,7 @@
 ---
 layout: no-styles
 title: Gallery
-permalink: /gallery/
+permalink: /gallery-md/
 ---
 
 <main class="gallery-wrapper" markdown="1">
