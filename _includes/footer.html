@@ -1,0 +1,16 @@
+<footer class="footer-wrapper">
+  <div class="footer-main-grid">
+
+    <div class="footer__to-top">
+        <a href="#main" aria-label="Back to top">
+          <img src="{{ '/assets/img/svg/thin-up-arrow-white.svg' | relative_url }}" alt="Up arrow">
+          <span>Back<br/>to top</span>
+        </a>
+    </div>
+
+  </div>
+
+  {% if jekyll.environment == 'production' and site.analytics %}
+  {{ include analytics.html }}
+  {% endif %}
+</footer>

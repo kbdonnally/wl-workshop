@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+	{% include head.html %}
+	<body class="layout--plain">
+		{{ content }}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{{ '/assets/js/lib/prism.min.js' | relative_url }}" type="text/javascript" charset="utf-8"></script>
+		<script src="{{ '/assets/js/main.js' | relative_url }}" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
