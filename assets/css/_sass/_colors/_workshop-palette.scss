@@ -1,19 +1,18 @@
 /* Color Palette: */
 
 /* Key:
-1. grape:               bright purple
-2. pale aqua:           light blue, hint of gray
-3. diamond:             light turquoise
-4. dark pastel purple:  bright purple, easter egg-ified
-5. medium sky blue:     medium turquoise
-6. text gray:           dark gray, 25% lightness
-7. nav gray:            darker gray, 13% lightness
+1. han purple:          intense purple
+2. medium sky blue:     medium turquoise
+3. text gray:           dark gray, 25% lightness
+4. nav gray:            darker gray, 13% lightness
+5. half gray:           medium gray, 50% lightness
 */
 
-/* Leftover from other sites: */
+/* Colors: */
 $hanpurple:             hsla(260%, 86%, 53%, 1); // page
 $medskyblue:            hsla(186%, 79%, 70%, 1); // nav, footer
 
-/* Neutrals: */
+/* Grays: */
 $textgray:              hsla(186, 1%, 25%, 1); // default text
 $navgray:               hsla(186, 0%, 13%, 1); // dark backgrounds
+$halfgray:              hsla(360, 0%, 50%, 1);
