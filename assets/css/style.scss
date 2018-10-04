@@ -3,10 +3,6 @@
 
 /* General Styles: */
 
-// fonts:
-$paralucent: "paralucent-condensed";
-$mr-eaves: 	 "mr-eaves-xl-modern";
-
 * {
 	box-sizing: border-box;
 }
@@ -18,15 +14,16 @@ body {
 	line-height: 1.5; // if 16px, = 24px line height
 }
 
+/* Defaults: */
+
 main {
-	padding-top: 60px; /* match navbar height */
+	padding-top: 60px; // match navbar height
 }
 
 li > p {
     margin: 0;
 }
 
-// layout-specific
 .layout--plain {
     max-width: calc(816px + 16.67%);
     margin: 0 auto;
@@ -35,11 +32,13 @@ li > p {
 
 /* Partials: */
 
-@import "_colors/slab-palette";
-@import "_colors/patterns-palette";
-@import "_colors/resume-palette";
+// colors
+@import "_colors/workshop-palette";
+
+// defaults
 @import "footer";
 @import "navbar";
 @import "page";
-@import "resume-draft-1";
-@import "resume-styling";
+
+// site-specific
+@import "gallery";
