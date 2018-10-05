@@ -1,10 +1,24 @@
 /* Presentation Styles: */
 
+// snap container
 .presentation-wrapper {
-
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    color: $textgray;
 }
 
-/* Slide wrappers: */
+/* Slide parent: */
+
+// snap items
+[class*="present-slides__"] {
+    position: relative;
+
+    height: 100vh;
+    padding: 0 4.167%;
+    scroll-snap-align: center;
+    border-bottom: 1px solid $halfgray;
+}
 
 .present-slides__intro {
 
