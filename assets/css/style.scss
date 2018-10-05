@@ -30,6 +30,12 @@ li > p {
     padding: 3rem 8.33%;
 }
 
+.layout--no-styles {
+    main {
+        padding-top: 0;
+    }
+}
+
 /* Partials: */
 
 // colors
