@@ -1,43 +1,73 @@
 /* Presentation Styles: */
 
+.demo {
+    color: black !important;
+    font-family: initial !important;
+}
+
+.demo--color {
+    color: darkgray !important;
+}
+
+.demo--font {
+    font-family: sans-serif !important;
+}
+
+.demo--border {
+    border: 4px solid lightblue;
+}
+
 // snap container
 .presentation-wrapper {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+//    height: 100vh;
+//    scroll-snap-type: y mandatory;
+//    overflow-y: scroll;
     color: $textgray;
 }
 
 /* Slide parent: */
 
 // snap items
-[class*="present-slides__"] {
+[class*="present-slide__"] {
     position: relative;
-
     height: 100vh;
-    padding: 0 4.167%;
-    scroll-snap-align: center;
+    padding: 3rem 4.167%;
+//    scroll-snap-align: center;
     border-bottom: 1px solid $halfgray;
 }
 
-.present-slides__intro {
+.present-slide__intro {
 
 }
 
-.present-slides__2 {
+.present-intro__title {
 
 }
 
-.present-slides__3 {
+.present-intro__content {
 
 }
 
-/* Slide contents: */
+/* Acronyms: */
 
-.present-slide__title {
+.present-slide__acronyms {
 
+    display: flex;
+    justify-content: space-between;
+//    flex-flow: column nowrap;
 }
 
-.present-slide__content {
+.present-acronyms__title {
+    align-self: center;
+    font-size: 3rem;
+}
 
+.present-acronyms__content {
+    height: 100%;
+    img {
+        display: block;
+        height: calc(100% - 3rem);
+        margin: 1.5rem 0;
+    //    border: 1px solid rgba(0,0,0,.15);
+    }
 }

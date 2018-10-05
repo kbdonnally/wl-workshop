@@ -41,6 +41,10 @@ li > p {
 // colors
 @import "_colors/workshop-palette";
 
+body {
+    color: $textgray;
+}
+
 // defaults
 @import "footer";
 @import "navbar";
