@@ -41,11 +41,20 @@ permalink: /slide-notes/
 # Slide 4: HTML: A Closer Look
 
 - Reading HTML:
-    - Tags: buckets so the browser and CSS can read what you mean
-    - Attributes: extra information about that tag ("bucket"), e.g. where a link should go
+
+{:.language-html}
+```
+<tag attribute="value">Contents</tag>
+```
+
+- Terms:
+    - **Tag**: buckets so the browser and CSS can read what you mean
+    - **Attribute**: extra information about that tag ("bucket"), e.g. where a link should go
+    - **Element**: a tag and its contents (this is what literally shows onscreen, e.g. a paragraph)
     - Attributes go in the start tag, so you can scan that info without having to read what's inside the tag
 
-- Attributes are also a main way to give CSS instructions on how to paint something
+{:.language-css}
+- Attributes are a main way to give CSS instructions on how to paint something
     - This is primarily done with 2 attributes: `id`, and `class`
     - They can be used the same, except `id` is only allowed to show up once on a page, and class can apply to as many elements as you want.
     - Due to this limitation, I usually "color" everything with classes
