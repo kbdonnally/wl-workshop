@@ -1,8 +1,14 @@
 /* Presentation Styles: */
 
+/* Exercise: */
+
 .demo {
     color: black !important;
     font-family: initial !important;
+    font-weight: 700 !important;
+    border-width: 0 !important;
+    padding: initial !important;
+    margin: initial !important;
 }
 
 .demo--color {
@@ -14,7 +20,12 @@
 }
 
 .demo--border {
-    border: 4px solid lightblue;
+    border: 4px solid lightblue !important;
+}
+
+.demo--final {
+    padding: 4px !important;
+    display: inline-block;
 }
 
 // snap container
