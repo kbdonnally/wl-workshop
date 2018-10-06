@@ -1,6 +1,6 @@
 ---
 title: Slide Notes
-layout: plain
+layout: workshop
 permalink: /slide-notes/
 ---
 
