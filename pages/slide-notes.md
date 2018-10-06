@@ -201,3 +201,26 @@ Result:
 
 {:.demo.demo--color.demo--font.demo--border}
 # Katherine
+
+## 5. Final touches
+
+What's left:
+1. There's not much room between the border and the letters, and
+2. I'd like it to only take up the space it needs to.
+
+{:.language-css}
+```
+.my-name {
+    color: darkgray;
+    font-family: sans-serif;
+    border: 4px solid lightblue;
+    /* new: */
+    padding: 4px; /* space b/t border & letters */
+    display: inline-block; /* explain */
+}
+```
+
+Result:
+
+{:.demo.demo--color.demo--font.demo--border.demo--final}
+# Katherine
