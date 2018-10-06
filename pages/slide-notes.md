@@ -125,13 +125,12 @@ To style *specifically that element*, and nothing else on the page:
 
 # Exercise: Style Your Name
 
-- Let's translate the writing from earlier into a digital version.
+Let's translate the writing from earlier into a digital version.
 
 ![Hand lettering]({{ 'assets/img/svg/name.svg' | relative_url }}) <!--("")-->
 
-- Describe the lettering: big, dark gray, blue border, sans-serif...
 
-- Okay, so let's make that happen. Without knowing anything else, we know big letters = `h1` element.
+Without knowing anything else, we know big letters = `<h1>`{:.language-html} element.
 
 First try:
 
@@ -145,9 +144,9 @@ Aaand that looks liiiike...
 {:.demo}
 # Katherine
 
-Hmm. We have some work to do.
+<!-- Hmm. We have some work to do.-->
 
-# Steps:
+# Makin' It Pretty
 
 ## 1. Adding a class
 
