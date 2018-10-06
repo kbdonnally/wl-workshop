@@ -28,6 +28,109 @@
     display: inline-block;
 }
 
+/* Page Styles: */
+
+/* Body: */
+
+.layout--workshop {
+    /* 1. FORMAT */
+    max-width: calc(816px + 16.67%);
+    margin: 0 auto;
+    padding: 3rem 8.33%;
+    @media screen and (min-width: 768px) {
+        font-size: 1.125rem;
+    }
+
+    /* 2. STYLE */
+    font-family: "Raleway", sans-serif;
+    h1, h2, h3, h4 {
+        line-height: 1;
+    }
+    // slide titles
+    h1 {
+        margin-bottom: calc(.25em - 2px);
+        margin-top: .5em;
+        padding-bottom: .25em;
+        font-size: 2rem;
+        font-weight: 900;
+        border-bottom: 2px solid $navgray;
+        @media screen and (min-width: 768px) {
+            margin-top: 1em;
+            font-size: 2.5rem;
+        }
+    }
+    // section titles
+    h2 {
+        margin-top: .5em;
+        margin-bottom: .75em;
+        padding-bottom: calc(.25em - 2px);
+        font-size: 1.625rem;
+        border-bottom: 2px solid $hanpurple;
+        @media screen and (min-width: 768px) {
+            margin-top: 1em;
+            font-size: 2rem;
+        }
+    }
+    // links
+    a {
+        font-weight: 700;
+        text-decoration: none;
+        color: $textgray;
+        border-bottom: 2px solid $hanpurple;
+        &:hover, &:focus {
+            color: $textgray;
+        }
+    }
+    // # code
+    code {
+        font-family: "Inconsolata", monospace !important;
+        white-space: pre-wrap;
+    }
+    pre {
+        max-width: 100%;
+        white-space: pre-wrap;
+    }
+    // # numbered list
+    ol {
+        list-style-type: none;
+        counter-reset: item-num;
+        li {
+            position: relative;
+            &::before {
+                box-sizing: border-box;
+                content: counter(item-num) ".";
+                counter-increment: item-num;
+                position: absolute;
+                top: 0;
+                left: -1.75em;
+                display: inline-block;
+                height: 24px;
+                font-family: "Inconsolata", sans-serif;
+            //    font-size: .925rem;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: center;
+            }
+            ul {
+                li {
+                    &::before {
+                        content: '';
+                    }
+                }
+            }
+            @media screen and (min-width: 768px) {
+                &::before {
+                    height: 27px;
+                    font-size: 1.0625rem;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+/* Container: */
+
 // snap container
 .presentation-wrapper {
 //    height: 100vh;
@@ -36,7 +139,7 @@
     color: $textgray;
 }
 
-/* Slide parent: */
+/* Slides: */
 
 // snap items
 [class*="present-slide__"] {
