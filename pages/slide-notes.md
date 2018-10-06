@@ -230,3 +230,15 @@ Result:
 
 {:.demo.demo--color.demo--font.demo--border.demo--final}
 # Katherine
+
+<!-- end example -->
+
+# Part II: Zooming Out
+
+# Files: structure, getting between them
+
+# From a drawing to a design
+
+- This will include design principles, re. how to pick the numbers you use etc.
+
+- Honestly, probably just code a demo page from scratch while your computer is onscreen.
