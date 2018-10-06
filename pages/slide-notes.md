@@ -17,11 +17,7 @@ permalink: /slide-notes/
     1. Content: "Katherine"
     2. Styles: text color, border info, size, what font we're using
 
-- Digitized text is literally just that: identifying things about a piece of text and figuring out how to write that in a way computers understand.
-
-- It separates the *content* of what you're writing from *how it looks*. (Just like Microsoft Word or PowerPoint.)
-
-- Everything is text! Browsers are just big ole' text readers.
+- Web design is literally just that: identifying things about a piece of text and figuring out how to write that in a way computers understand.
 
 # Slide 2: What's in a webpage?
 
